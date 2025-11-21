@@ -1,28 +1,42 @@
 # Sticky Notes React
 
-Drag & Drop sticky notes App built with React JS and Appwite.
+A **drag & drop sticky notes application** built with **React JS** and **Appwrite**.  
+This project allows users to create, move, and customize sticky notes with persistence in a database.
 
-This project is part of a video tutorial which will be posted on the [Free Code Camp](https://www.youtube.com/@freecodecamp) youtube channel.
+---
 
-Link will be provided here 👉 (LINK) once the video is posted.
+## Features
 
-<img src="demo.gif"/>
+- Drag and drop notes anywhere on the screen.
+- Save note data, position, and color in the database.
+- Change note color at any time.
+- Auto-grow note size as data is input.
+- Autosave notes instantly while typing.
 
-### Features
+---
 
--   Drag and Drop notes anywhere on screen
--   Save note data, position and color in database
--   Change note color at anytime
--   Autogrow note size as data is input
--   Autosave notes as you add data.
+## Demo
 
-### Setup instructions
+![Demo](demo.gif)
 
--   Clone repo: `git clone <REPO URL>`
--   Install dependencies and run server: `cd reponame` + `npm i` + `npm run dev`
--   Setup Appwrite backend with database (See database details below)
--   Create `.env` file (use `.env.example` as a reference) and update appwrite credentials
+---
 
-### Appwrite backend
+## Setup Instructions
 
-(Comming soon....)
+```bash
+# 1. Clone the repository
+git clone <YOUR_REPO_URL>
+
+# 2. Navigate into the project folder
+cd sticky-notes
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the development server
+npm run dev
+
+# 5. Setup Appwrite backend and database
+# - Copy .env.example to .env
+# - Add your Appwrite project endpoint, API key, and database credentials
+
