@@ -2,6 +2,10 @@
 
 A professional drag-and-drop sticky notes application with user-specific data persistence.
 
+## Demo
+
+![Demo](demo.gif)
+
 ## Core Features
 
 - **User Auth**: Secure sign-up/login using Appwrite Auth.
