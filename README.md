@@ -1,28 +1,42 @@
-# Sticky Notes React
+# Sticky Notes
 
-Drag & Drop sticky notes App built with React JS and Appwite.
+A professional drag-and-drop sticky notes application with user-specific data persistence.
 
-This project is part of a video tutorial which will be posted on the [Free Code Camp](https://www.youtube.com/@freecodecamp) youtube channel.
+## Core Features
 
-Link will be provided here 👉 (LINK) once the video is posted.
+- **User Auth**: Secure sign-up/login using Appwrite Auth.
+- **Private Notes**: Database rules ensure users only see their own content.
+- **Canvas Interaction**: Drag, drop, and position notes anywhere.
+- **Live Sync**: Real-time updates for text, color, and coordinates.
+- **Smart Formatting**: Auto-resizing text areas and color presets.
 
-<img src="demo.gif"/>
+## Tech Stack
 
-### Features
+- **Framework**: React JS
+- **Backend-as-a-Service**: Appwrite (Auth & Databases)
 
--   Drag and Drop notes anywhere on screen
--   Save note data, position and color in database
--   Change note color at anytime
--   Autogrow note size as data is input
--   Autosave notes as you add data.
+## Setup Guide
 
-### Setup instructions
+1. **Clone & Install**
+   ```bash
+   git clone <REPO_URL>
+   cd <repository_name> && npm install
+   ```
 
--   Clone repo: `git clone <REPO URL>`
--   Install dependencies and run server: `cd reponame` + `npm i` + `npm run dev`
--   Setup Appwrite backend with database (See database details below)
--   Create `.env` file (use `.env.example` as a reference) and update appwrite credentials
+2. **Environment Variables**  
+Create a .env file in the root directory
+   ```bash
+    VITE_ENDPOINT="https://cloud.appwrite.io/v1"
+    VITE_PROJECT_ID="your_project_id"
+    VITE_DATABASE_ID="your_db_id"
+    VITE_COLLECTION_NOTES_ID="your_collection_id"
+   ```
 
-### Appwrite backend
+3. **Setup Appwrite**  
+Note: Backend setup refer APPWRITE_SETUP.md file
 
-(Comming soon....)
+4. **Run the app**
+   ```bash
+    npm run dev
+   ```
+---

@@ -2,6 +2,7 @@ import React from "react";
 import { useContext } from "react";
 import { NotesContext } from "../context/NotesContext";
 import { db } from "../appwrite/databases";
+import { toast } from "react-toastify";
 
 const Color = ({ color }) => {
     const { selectedNote, notes, setNotes } = useContext(NotesContext);
@@ -27,7 +28,7 @@ const Color = ({ color }) => {
                 colors: JSON.stringify(color),
             });
         } catch (error) {
-            alert("You must select a note before changing colors");
+            toast.error("You must select a note before changing colors");
         }
     };
 
